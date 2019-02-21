@@ -1,4 +1,3 @@
-
 // Fonts
 // @import url('https://fonts.googleapis.com/css?family=Nunito');
 
@@ -7,12 +6,18 @@
 
 // font-awesome
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
 
 // Bulmas
 @import '~bulma/bulma';
 
 // Buefy
 @import '~buefy/src/scss/buefy';
+
+// Customs Sass
+@import 'overrides';
+@import 'spacing_helpers';
 
 .navbar-laravel {
   background-color: #fff;

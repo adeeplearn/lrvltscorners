@@ -54011,7 +54011,32 @@ Vue.use(buefy__WEBPACK_IMPORTED_MODULE_0___default.a);
  */
 
 var app = new Vue({
-  el: '#app'
+  el: '#app',
+  data: {}
+});
+$(document).ready(function () {
+  // Check for click events on the navbar burger icon
+  $(".navbar-burger").click(function () {
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    $(".navbar-burger").toggleClass("is-active");
+    $(".navbar-menu").toggleClass("is-active");
+  });
+  $("button.button").click(function () {
+    $(".dropdown").toggleClass("is-active");
+  }); // $(document).scroll(function() {
+  //     var x = $(this).scrollTop();
+  //     if (x > 50) {
+  //         $(".navbar").toggleClass("is-fixed-top");
+  //     }
+  //     else {
+  //         $(".navbar").toggleClass("is-fixed-top");
+  //     }
+  // });
+
+  $("has-text-grey-lighter").hover(function () {
+    $(this).toggleClass(".has-text-grey-lighter");
+    $(this).toggleClass(".has-text-grey");
+  });
 });
 
 /***/ }),

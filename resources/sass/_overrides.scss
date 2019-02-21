@@ -1,0 +1,26 @@
+// Font and link
+a.has-text-grey-lighter:hover{
+    color: grey !important;
+}
+
+
+// Navigation
+.navbar {
+    height: 4rem;
+}
+
+.navbar-item img{
+    max-height: 3.3rem ;
+}
+
+.navbar-dropdown{
+    top: 80%;
+}
+
+.hero is-medium {
+    height: 80vh;
+}
+
+.hero-head {
+    background-color: white;
+}
