@@ -16,16 +16,21 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @yield('styles')
+
 </head>
 <body>
+
     @include('_includes.nav.navigate')
+    
     <div id="app">
         <main class="py-4">
             @yield('content')
         </main>
     </div>
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     @yield('scripts')
+
 </body>
 </html>

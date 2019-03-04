@@ -17,10 +17,82 @@ a.has-text-grey-lighter:hover{
     top: 80%;
 }
 
-.hero is-medium {
-    height: 80vh;
+.hero-head{
+    padding: 1.5rem 1rem;
 }
 
-.hero-head {
-    background-color: white;
+.hero-body{
+    padding: 1rem 1rem;
+}
+
+// .hero{
+//     background-image: linear-gradient(
+//         to right bottom,
+//         rgba($color-link-light, 0.8),
+//         rgba($color-link-flat, 0.8)),
+//         // url('../../public/images/nat-10.jpg')
+//         ;
+//     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+// }
+
+figure{
+    &.image.is-64x64{
+        display: inline-flex;
+        background-size: cover;
+        background-position: top;
+        position: relative;
+    }
+}
+
+// .order-box{
+//     z-index: 1000;
+// }
+
+section.packages-landing.section{
+    padding: 2rem 1.5rem;
+}
+
+hr.container {
+    background-color: $hr !important;
+}
+
+.card.media{
+    .media-content{
+        margin: auto;
+        padding: 0 5px;
+    }
+}
+
+// a.packages.column.is-3{
+//     .card{
+//         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1), 0 0 0 0 rgba(0, 0, 0, 0.1);
+//     }
+// }
+
+
+.logo.box{
+    figure.image{
+        
+        margin: 0 15px;
+
+        img{
+            height: 102px;
+        }
+    }
+}
+
+.subtitle {
+    line-height: 1.5;
+}
+
+.logo-bottom{
+    margin-top: -60px;
+    .logo-tcwh{
+        height: 120px;
+        width: auto;
+    }
+}
+
+.footer {
+    padding: 2rem 1.5rem 2rem;
 }

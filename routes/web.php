@@ -11,11 +11,14 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('main');
+})->name('welcome');
 
-Route::view('/', 'main');
+Route::prefix('manage')->middleware('role:superadministrator|administrator|editor|author|contributor')->group(function(){
+    Route::get('/', 'ManageController@index');
+    Route::get('/dashboard', 'ManageController@dashboard')->name('manage.dashboard');
+});
 
 Auth::routes();
 
